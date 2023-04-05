@@ -16,7 +16,7 @@
 - 플레이어의 바닥 판정은 ground_check()함수에서 이뤄진다.
 - 총 6개의 레이캐스트로 판별하며 예시는 아래와 같다.
 
-<img width="25%" src="https://user-images.githubusercontent.com/33209821/229854642-dfc69813-6ef6-4155-a474-908158b43baa.png"/>
+<img width="30%" src="https://user-images.githubusercontent.com/33209821/229854642-dfc69813-6ef6-4155-a474-908158b43baa.png"/>
 
 - 플레이어를 기준으로 왼쪽, 가운데, 오른쪽에 각각 2개의 레이캐스트를 사용하고 1개는 짧게(빨간색), 나머지 하나는 길게(파란색) 설정한다.
 - 플레이어의 가운데만 레이캐스트를 한다면 가장자리 충돌처리를 못 하기때문에 3곳에서 레이캐스트를 한다.
@@ -46,8 +46,12 @@
    }
 
 ```
+<p>
+<img width="40%" src="https://user-images.githubusercontent.com/33209821/230016094-8b6b9ca3-5017-41af-9704-7a8b931eb1f1.gif"/>
+<img width="40%" src="https://user-images.githubusercontent.com/33209821/230016104-825de7e7-9057-4d68-83aa-568d07f4117c.gif"/>
+</p>
 - 수직방향으로의 벽 판정도 원리는 바닥 판정 판별과 같다.
 - 몬스터는 이동 중 절벽에서는 방향을 바꿔야하기 때문에 이동 방향 기준 아래로 레이캐스트를 한다.
-<img width="25%" src="https://user-images.githubusercontent.com/33209821/229854648-970f5f7b-a692-4a01-a71b-50dbb9e655ef.png"/>
-
+<img width="30%" src="https://user-images.githubusercontent.com/33209821/229854648-970f5f7b-a692-4a01-a71b-50dbb9e655ef.png"/>
 - 절벽 감지 레이캐스트(빨간색)가 false값을 출력한다면 이동 방향을 바꾼다.
+<img width="40%" src="https://user-images.githubusercontent.com/33209821/230016109-f3efd3e6-1cc5-4b67-bfcd-5d877764103a.gif"/>
